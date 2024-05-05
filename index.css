@@ -296,11 +296,20 @@ button {
   border: none;
   outline: none;
 }
-/* Add some custom styling for small gap between images */
-.image-container {
+ /* Add some custom styling for small gap between images */
+ .image-container {
   margin-bottom: 15px; /* Adjust as needed */
 }
+
 .image-container img {
   width: 100%;
-  height: auto;
+  height: 20rem;
 }
+
+/* Adjust image size for small screens */
+@media (max-width: 576px) {
+  .image-container img {
+    height: 15rem; /* Adjust as needed */
+  }
+}
+
